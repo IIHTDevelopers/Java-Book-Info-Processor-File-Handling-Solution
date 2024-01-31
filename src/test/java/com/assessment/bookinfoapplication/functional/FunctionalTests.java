@@ -1,9 +1,9 @@
-package com.assessment.bookinfoapplication.functional;
+package com.bookinfoapplication.functional;
 
-import static com.assessment.bookinfoapplication.testutils.TestUtils.businessTestFile;
-import static com.assessment.bookinfoapplication.testutils.TestUtils.currentTest;
-import static com.assessment.bookinfoapplication.testutils.TestUtils.testReport;
-import static com.assessment.bookinfoapplication.testutils.TestUtils.yakshaAssert;
+import static com.bookinfoapplication.testutils.TestUtils.businessTestFile;
+import static com.bookinfoapplication.testutils.TestUtils.currentTest;
+import static com.bookinfoapplication.testutils.TestUtils.testReport;
+import static com.bookinfoapplication.testutils.TestUtils.yakshaAssert;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -13,13 +13,11 @@ import java.util.List;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.stereotype.Component;
 
 import com.bookinfoapplication.Book;
 import com.bookinfoapplication.BookInfoProcessor;
 
-@Component
-public class FunctionalTests {
+public class BookInfoProcessorFunctionalTests {
 
 	private static final String TEST_INPUT_FILE_PATH = "./src/main/java/com/bookinfoapplication/books.txt";
 
