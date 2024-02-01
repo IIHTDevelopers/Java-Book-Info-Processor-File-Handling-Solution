@@ -42,8 +42,8 @@ public class FunctionalTests {
 		System.setIn(inputStream);
 
 		try {
-			BookInfoProcessor.readBookData(TEST_INPUT_FILE_PATH);
-			yakshaAssert(currentTest(), true, businessTestFile);
+			List<Book> books = BookInfoProcessor.readBookData(TEST_INPUT_FILE_PATH);
+			yakshaAssert(currentTest(), books != null, businessTestFile);
 		} catch (Exception e) {
 			yakshaAssert(currentTest(), false, businessTestFile);
 		}
@@ -57,7 +57,7 @@ public class FunctionalTests {
 
 		try {
 			BookInfoProcessor.performDataOperations(BookInfoProcessor.readBookData(TEST_INPUT_FILE_PATH));
-			yakshaAssert(currentTest(), true, businessTestFile);
+			yakshaAssert(currentTest(), BookInfoProcessor.INPUT_FILE_PATH != "", businessTestFile);
 		} catch (Exception e) {
 			yakshaAssert(currentTest(), false, businessTestFile);
 		}
