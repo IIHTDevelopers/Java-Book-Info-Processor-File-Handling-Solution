@@ -8,7 +8,7 @@ import java.util.List;
 
 public class BookInfoProcessor {
 
-	private static final String INPUT_FILE_PATH = "./src/main/java/com/bookinfoapplication/books.txt";
+	public static final String INPUT_FILE_PATH = "./src/main/java/com/bookinfoapplication/books.txt";
 
 	public static void main(String[] args) {
 		try {
